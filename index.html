@@ -24,22 +24,27 @@
             <nav class="site-nav">
                 <ul class="site-nav__list">
                     <li class="site-nav__item">
-                        <a href="#">
+                        <a href="#intro">
+                            Intro
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#about">
                             About
                         </a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="#">
+                        <a href="#skills">
                             Skills
                         </a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="https://github.com/roeir">
+                        <a href="#git">
                             Github
                         </a>
                     </li>
                     <li class="site-nav__item">
-                        <a href="#">
+                        <a href="#contacts">
                             Contacts
                         </a>
                     </li>
@@ -52,10 +57,79 @@
     </header>
 
     <main class="site-main">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet architecto asperiores commodi cum, eaque eos est eveniet impedit in, ipsa labore laboriosam laborum libero officiis placeat quod, vel vitae.</h1>
+        <div class="container">
+            <section class="section intro">
+                <a href="#" id="intro" class="section__title">
+                    intro
+                </a>
+
+                <div class="intro__content">
+                    <h1>
+                        Hello, there. I`m Andrew
+                    </h1>
+
+                    <div class="intro__face"></div>
+                </div>
+            </section>
+
+            <section class="section about">
+                <a href="#" id="about" class="section__title section__title--black">
+                    about
+                </a>
+                <p class="about__content">
+                    I`m freelance with 1 year experience. Love to learn javascript and I want to become a true professional in this field.
+                </p>
+            </section>
+
+            <section class="section skills">
+                <a href="#" id="skills" class="section__title section__title--black">
+                    skills
+                </a>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        HTML5, Jade
+                    </li>
+                    <li class="skills__item">
+                        CSS3, Sass
+                    </li>
+                    <li class="skills__item">
+                        Javascript, jQuery
+                    </li>
+                    <li class="skills__item">
+                        Bower, Gulp
+                    </li>
+                    <li class="skills__item">
+                        Git
+                    </li>
+                    <li class="skills__item">
+                        Ubuntu Linux, Debian
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="section git">
+                <a href="#" id="git" class="section__title section__title--black">
+                    git
+                </a>
+                <a href="https://github.com/roeir" class="git__link">
+                    #roeir
+                </a>
+            </section>
+
+            <section class="section contacts">
+                <a href="#" id="contacts" class="section__title section__title--black">
+                    contacts
+                </a>
+                <p class="contacts__mail">
+                    skrebets.andrew@yandex.ru
+                </p>
+            </section>
+        </div>
     </main>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
