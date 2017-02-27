@@ -119,3 +119,144 @@ img {
   flex: 1;
   padding: 0 15px;
 }
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.intro {
+  min-height: 500px;
+  background-image: url(../images/bg-into.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.intro h1 {
+  color: #fff;
+  text-shadow: #2E2D33 3px 3px 2px;
+  font-size: 3em;
+}
+
+.intro__content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.intro__face {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+  -webkit-flex: 200px 0 0;
+  -ms-flex: 200px 0 0px;
+  flex: 200px 0 0;
+  background-color: #2E2D33;
+  margin-left: 20px;
+  background-image: url(../images/intro-face.jpg);
+  background-size: 100%;
+  background-position: 0 -120px;
+  background-repeat: no-repeat;
+}
+
+.section {
+  padding: 30px 15px;
+}
+
+.section:nth-child(2n + 1) {
+  background-color: #CDD7C1;
+}
+
+.section__title {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+  text-align: right;
+  text-shadow: #2E2D33 1px 1px;
+  display: block;
+  outline: none;
+  width: 120px;
+  text-transform: uppercase;
+  margin-left: -45px;
+  position: relative;
+  padding-top: 7px;
+  margin-bottom: 20px;
+}
+
+.section__title--black {
+  color: #2E2D33;
+  text-shadow: none;
+}
+
+.section__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #2a5885;
+}
+
+.about__content {
+  font-size: 18px;
+}
+
+.skills__list {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills__item {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 20px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.git__link {
+  color: #2E2D33;
+  font-size: 48px;
+  text-align: center;
+  display: block;
+  transition: color 200ms ease-in-out;
+  will-change: color;
+}
+
+.git__link:hover {
+  color: black;
+}
+
+.contacts__mail {
+  font-size: 18px;
+  text-align: center;
+}
